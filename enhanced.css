@@ -1,0 +1,169 @@
+/* Enhanced CSS - Minimal custom styles with Bootstrap 5.3 integration */
+
+/* Custom Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+/* Root Variables */
+:root {
+  --primary-color: #ffc107;
+  --dark-color: #222831;
+  --light-color: #f8f9fa;
+}
+p{
+    color: white !important;
+}
+
+/* Global Styles */
+body {
+  font-family: "Cairo", sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section Background */
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Hover Effects */
+.hover-warning:hover {
+  color: var(--primary-color) !important;
+  transition: color 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Floating Animation */
+.floating-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Custom Button Hover Effects */
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #e0a800;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Card Hover Effects */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease;
+}
+
+/* Custom Carousel Indicators */
+.carousel-indicators button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+/* Form Focus Styles */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+/* Navigation Pills Active State */
+.nav-pills .nav-link.active {
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+  background-color: rgba(34, 40, 49, 0.1);
+  color: var(--dark-color);
+}
+
+/* Custom Responsive Utilities */
+@media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll;
+  }
+
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading Animation for Images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img:hover {
+  opacity: 0.9;
+}
+
+/* Custom Border Radius */
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+/* Shadow Utilities Enhancement */
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Text Shadow for Better Readability */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Custom Spacing for Better Visual Hierarchy */
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+/* Accessibility Improvements */
+.btn:focus,
+.nav-link:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .carousel-indicators,
+  .btn {
+    display: none !important;
+  }
+}
