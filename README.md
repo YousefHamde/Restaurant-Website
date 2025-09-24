@@ -25,7 +25,7 @@ The design is professional and fully responsive, ensuring a smooth user experien
 
 ## 🌍 Live Demo  
 (Replace this with your Netlify/Vercel link)  
-👉 [Live Preview](https://yousef1hamdy.github.io/Restaurant-Website/)  
+👉 [Live Preview](https://yousefhamde.github.io/Restaurant-Website/)  
 
 ---
 
